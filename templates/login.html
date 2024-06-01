@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block style %}
+    <link href="\static\registration.css" rel="stylesheet" type="text/css" />
+    
+{% endblock %}
+
+{% block content %}
+    <main>
+        <div class="container">
+            <!-- <img src="/static/one.jpg" alt="" class="img-responsive"/> -->
+        
+            <form class="form-spacing form-reg">
+                <h1>Registration Form</h1>
+                <hr>
+                <label class="sr-only" for="membName">Email id</label>
+                <input type="text" class="form-control" id="memName" placeholder="Your Name"/>
+                <br/>
+                <label class="sr-only" for="membEmailid">Email id</label>
+                <input type="email" class="form-control" id="membEmailid" placeholder="Emailid"/>
+                <br/>
+                <label class="sr-only" for="membPassword">Password</label>
+                <input type="password" class="form-control" id="membPassword" placeholder="Password"/> 
+                <br/>
+                <label class="sr-only" for="membPassword">PasswordAgain</label>
+                <input type="password" class="form-control" id="membPassword" placeholder="Password"/> 
+                <br/>
+
+                <button type="submit" class="btn btn-md btn-danger">Create your account</button>
+                <br>
+                <hr>
+                <p>Already have an account?<a href="/signin">Sign in</a></p>
+            </form>    
+        </div>
+    </main>
+{% endblock %}
+
+{% block script %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+            $( '[data-toggle="popover"]' ).popover();   
+        });
+    </script>
+{% endblock %}

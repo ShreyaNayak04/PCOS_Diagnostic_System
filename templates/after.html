@@ -1,0 +1,33 @@
+<html>
+<body bgcolor="#c0c0c0">
+
+    <center>
+
+        <h1 style="padding: 20px;">  PREDICTION   </h1>
+    
+    {%if prediction_text == 1%}
+    <h1>Sorry! You have PCOS</h1>  
+    <img src="/static/pcos_yes.jpg" width="25%" height="25%"  padding=" 20px" >
+ 
+
+
+    {%else%}
+    <h1>Good News! You don't have PCOS</h1>
+    <img src="/static/one.jpg" width="25%" height="25%"  padding=" 20px" >
+    
+    {%endif%}
+
+        <br><br>
+    <a href='/'>go back to home page</a>
+
+    </center>
+
+</body>
+
+</html>
+
+
+
+
+
+
